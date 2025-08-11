@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <header>
+        <h1>HashMap Enhancement</h1>
+        <nav class="navbar">
+                <ul>
+                    <li><a class="links" href="EnhancementProject.html">
+                        <ion-icon name="arrow-back"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <body>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <h2>Narrative</h2>
+        <p>The contacts project was made in CS 320 in 2024. It simulates 
+            how a phone would store and access contact data. It also allows users to 
+            create and update their own contacts. I learned a lot about making test 
+            cases and verifying input while originally creating this project.
+        </p>
+        <p>I selected this artifact to enhance because of the inefficient use of an 
+            array list. All the methods had a for loop that would run through the 
+            entire contact array in the worst-case scenario. I also noticed that a 
+            hash map would fit perfectly as an enhancement, because each contact already 
+            as a unique id for the map keys. I changed the contactList array list to a 
+            dictionary and fixed every piece of code that needed to access it. This 
+            also ended up simplifying the code base as most methods got reduced to one 
+            line of code. Finally, I made the contact class more readable by changing the 
+            magic numbers in verification to final fields and I added verification to 
+            make sure the phone number is an integer. The enhancement showcased my 
+            knowledge in the efficiency of hash maps and my ability to replace one data 
+            structure with another effectively. My solution is aligned with 
+            course outcome four, because I examined and implemented tools to find a more 
+            efficient computing solution.
+        </p>
+        <p>
+             I learned more about implementing hash maps with java while enhancing 
+             this artifact. I was surprised by how many lines of code were cut just 
+             by changing from an array list to a hash map. The only challenge I faced 
+             while enhancing this artifact was updating the addContact method. I had to 
+             make sure that the hash map’s containsKey method would not break if the 
+             map is empty. Since it does not, I only needed to check if the id was 
+             already in the contact list. 
+        </p>
+
+        <h3>Array List</h3>
+        <img src="media/Old Add Contact.png">
+        <img src="media/Old Change Name.png">
+        <img src="media/Old Setter.png" width="200">
+        <h3>HashMap</h3>
+        <img src="media/New Add Contact.png">
+        <img src="media/New Change Name.png">
+        <img src="media/New Setter.png">
+    </body>
+    <footer>
+        <a class="links" href="https://github.com/RyanD233" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a class="links" href="https://www.linkedin.com/in/ryan-davis-b05a38205/" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a class="links" href="https://beanmachine48.itch.io/" target="_blank">
+            <ion-icon name="game-controller-outline"></ion-icon>
+        </a>
+    </footer>
+</html>
